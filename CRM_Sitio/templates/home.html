@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+    <!-- Imagem de fundo -->
+    <div class="bg-image">
+      <img class="img-fluid" src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Imagem de um cachorro">
+    </div>
+
+    <!-- Seção de apresentação do site -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+              <h1>Bem-vindo ao PetMedVida!</h1>
+              <p>Com nosso sistema, você pode monitorar a saúde dos seus animais de estimação de forma fácil e eficiente. Adicione informações como peso, vacinas, exames e muito mais, e mantenha um histórico completo de saúde dos seus bichinhos. Além disso, nosso sistema permite que você compartilhe o perfil de seus animais com veterinários, petshops, condomínios e outros cuidadores.</p>
+              <p>Para começar, faça login ou crie uma conta:</p>
+              <a href="{% url 'login' %}" class="btn btn-dark">Login</a>
+            </div>
+          </div>
+        </section>
+
+
+
+{% endblock %}
