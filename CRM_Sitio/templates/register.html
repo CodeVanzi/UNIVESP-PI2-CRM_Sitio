@@ -1,10 +1,23 @@
 {% extends 'base.html' %}
+
+{% block styles %}
+<style>
+    .header {
+        width: 100%;
+        height: 33.33vh;
+        background: url("https://images.pexels.com/photos/2733918/pexels-photo-2733918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=975") no-repeat center center fixed;
+        background-size: cover;
+    
+      }
+</style>
+{% endblock %}
+
 {% block content %}
 
 <!-- header -->
 
 <div class="header"></div>
-
+{% comment %} <img class="img-fluid" src="https://images.pexels.com/photos/2733918/pexels-photo-2733918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=975" alt="legumes e vegetais"> {% endcomment %}
 <!-- Conteúdo-->
 
 
@@ -44,7 +57,7 @@
 
 
 	<br/>
-	  <button type="submit" class="btn btn-secondary">Register</button>
+	
 	</form>
 
 
